@@ -29,5 +29,8 @@
     <ClInclude Include="ConstructorDestr.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="DefaultConstructor.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
