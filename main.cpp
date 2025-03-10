@@ -61,8 +61,11 @@ int main()
 
     /*Section 3: Default Constructor */
     DefaultConstructor India{"india",25,8.5};   //Default constructor is called, if no other constructor is called this will be default one
-   // India.set_name("India");
-    cout << India.getname() << endl;
+    DefaultConstructor NZ;
+    DefaultConstructor Eng{ "Eng", 12 };
+    DefaultConstructor Afg{ "Afg" };
+    // India.set_name("India");
+    //cout << India.getname() << endl;
 
     return 0;
 }
