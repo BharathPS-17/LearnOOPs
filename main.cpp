@@ -3,6 +3,7 @@
 
 #include <iostream>
 #include "header.h"
+#include <vector>
 
 int main()
 {
@@ -60,10 +61,45 @@ int main()
     ////End of Section 2
 
     /*Section 3: Default Constructor */
-    DefaultConstructor India{"india",25,8.5};   //Default constructor is called, if no other constructor is called this will be default one
-   // India.set_name("India");
-    cout << India.getname() << endl;
+    //DefaultConstructor India{"india",25,8.5};   //Default constructor is called, if no other constructor is called this will be default one
+    //DefaultConstructor NZ;
+    //DefaultConstructor Eng{ "Eng", 12 };
+    //DefaultConstructor Afg{ "Afg" };
+    // India.set_name("India");
+    //cout << India.getname() << endl;
+
+    /*Copy Constructor*/
+   // Student Rajesh{ "Rajeshj",69, 10.5 };
+   // Student Dinesh{ Rajesh };
+   // Dinesh.Getname();
+   // Dinesh.Setname("Dinesh");
+
+    /*Shallow Copy constructor*/
+    /*ShallowCopy obj1{ 100 };
+    cout << "Object 1 value = " << obj1.Getnum() << endl;
+
+    ShallowCopy obj2{ obj1 };
+    cout << "Object 2 value = " << obj2.Getnum() << endl;*/
+    /*The above code segment will give debug assertion error as Obj2 destructor will clear the pointer and obj1 again
+    trying to delete the freed memory, thus we need to go for deep copy*/
+
+    /*Deep Copy contsructor*/
+
+   /* DeepCopy obj1{ 100 };
+    DeepCopy obj2{ obj1 };
+
+    cout<< "Object 1 == " << obj1.GetData() << endl;
+    cout << "Object 2 == " << obj2.GetData() << endl;*/
+    //end of deep copy
+
+    /*Move Constructor*/
+    vector <MoveConstructor> vec{ 10 };
+
+    vec.push_back( MoveConstructor(20) );
+
+
 
     return 0;
 }
 
+//Output:

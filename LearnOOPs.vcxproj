@@ -128,12 +128,18 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="ClassDeclaration.cpp" />
+    <ClCompile Include="CopyConstructor.cpp" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="ShallowCopy.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="ConstructorDestr.h" />
+    <ClInclude Include="CopyConstructor.h" />
+    <ClInclude Include="DeepCopy.h" />
     <ClInclude Include="DefaultConstructor.h" />
     <ClInclude Include="header.h" />
+    <ClInclude Include="MoveConstructor.h" />
+    <ClInclude Include="ShallowCopy.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
