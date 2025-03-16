@@ -128,11 +128,13 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="ClassDeclaration.cpp" />
+    <ClCompile Include="ConstInClasses.cpp" />
     <ClCompile Include="CopyConstructor.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="ShallowCopy.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="ConstInClasses.h" />
     <ClInclude Include="ConstructorDestr.h" />
     <ClInclude Include="CopyConstructor.h" />
     <ClInclude Include="DeepCopy.h" />

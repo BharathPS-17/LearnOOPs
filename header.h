@@ -6,3 +6,4 @@
 #include "ShallowCopy.h"
 #include "DeepCopy.h"
 #include "MoveConstructor.h"
+#include "ConstInClasses.h"

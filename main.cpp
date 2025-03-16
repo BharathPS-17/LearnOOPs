@@ -93,10 +93,13 @@ int main()
     //end of deep copy
 
     /*Move Constructor*/
-    vector <MoveConstructor> vec{ 10 };
+   /* vector <MoveConstructor> vec{ 10 };
 
-    vec.push_back( MoveConstructor(20) );
+    vec.push_back( MoveConstructor(20) );*/
 
+    /*Const Classes*/
+    const ConstInClasses Bharath{ "Bharath" };
+    Bharath.get_name(); //If get_name function is not defined as const then this will give compiler error
 
 
     return 0;
